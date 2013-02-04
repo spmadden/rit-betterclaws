@@ -1,0 +1,15 @@
+{
+	"name": "Better Claws Interface",
+	"version" : "1.0",
+	"description" : "I'm sick of claws - so I made it better",
+	"permissions":[
+		"https://claws.rit.edu/"
+	],
+	"content_scripts":[
+		{
+			"matches": ["https://claws.rit.edu/admintools/*"],
+			"js" : ["betterclaws.user.js"],
+			"run_at":"document_end"
+		}
+	]
+}
